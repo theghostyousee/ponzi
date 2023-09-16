@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="bar.png" />
+    <script src="script.js"></script>
+    <title>Ponzi</title>
+  </head>
+  <body>
+    <div class="overlay"></div>
+
+    <div class="block-1">
+      <img id="contract" src="https://cdn.discordapp.com/attachments/1152205282571714610/1152205732721201152/a6d745d26194aafd737c0d0f3dbdcddc.png" />
+    </div>
+    <div class="text">
+      <p style="color: #9da49d">
+        ＯＰＥＮ ＴＨＥ. . .
+        <br />
+        <br />
+
+        <span id="muerto" style="color: #fe0e0ea6">[ ＣＯＮＴＲＡＣＴ ]</span>
+      </p>
+      `
+    </div>
+
+    <script>
+      var x = [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "r",
+        "s",
+        "t",
+        "u",
+        "v",
+        "w",
+        "x",
+        "y",
+        "z",
+        "0",
+        "1",
+        "2",
+        "n",
+        "o",
+        "p",
+        "q",
+        "r",
+        "s",
+        "t",
+        "u",
+        "v",
+        "w",
+        "x",
+        "y",
+        "z",
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L",
+        "M",
+        "N",
+        "O",
+        "P",
+        "Q",
+        "R",
+        "S",
+        "T",
+        "U",
+        "V",
+        "W",
+        "X",
+        "Y",
+        "Z",
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j",
+        "k",
+        "l",
+        "m",
+        "n",
+        "o",
+        "p",
+        "q",
+        "r",
+        "s",
+        "t",
+        "u",
+        "v",
+        "w",
+        "x",
+        "y",
+        "z",
+      ];
+
+      function generateMixed(n) {
+        let res = "";
+        for (let i = 0; i < n; i++) {
+          let id = Math.ceil(Math.random() * 80);
+          res += x[id];
+        }
+        return res;
+      }
+
+      function clickonbody() {
+        var text = "This is my proof of @ExitBot%0a%0a";
+        var hash = "🚪" + "0x" + generateMixed(12);
+        window.location.href =
+          "https://twitter.com/intent/tweet?&text=\n" + text + hash;
+      }
+
+      window.onload = function () {
+        document
+          .getElementById("muerto")
+          .addEventListener("click", clickonbody);
+      };
+
+      window.onload = function () {
+        document
+          .getElementById("contract")
+          .addEventListener("click", clickonbody);
+      };
+
+    </script>
+
+    <div class="dead">
+      <img src="deadend.gif" />
+    </div>
+    <div class="dead-2">
+      <img src="deadend.gif" />
+    </div>
+  </body>
+</html>
