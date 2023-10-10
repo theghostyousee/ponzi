@@ -12,10 +12,10 @@
   font-size: 24px;
 }
 body {
-  cursor: url("rrw.png") 11 11, auto;
+  cursor: url("arrow.png") 11 11, auto;
 }
 a {
-  cursor: url("rrw2.png") 11 11, default;
+  cursor: url("cursor.png") 11 11, default;
 }
 a:link {
   color: #d2738a;
@@ -31,12 +31,12 @@ a:active {
 }
 
 span:hover {
-  cursor: url("rrw2.png") 11 11, default;
+  cursor:  url("cursor.png") 11 11, default;
 }
 
 #contract{
 
-    cursor: url("rrw2.png") 11 11, default;
+    cursor:  url("cursor.png") 11 11, default;
     z-index: 999;
 }
 
@@ -86,7 +86,7 @@ body:after {
 }
 
 .block-1 img{
-    width: 350px;
+    width: 210px;
     opacity: 0.7;
 }
 

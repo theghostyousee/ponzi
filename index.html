@@ -4,26 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="bar.png" />
+    <link rel="icon" href="nobody.jpg" />
     <script src="script.js"></script>
-    <title>Ponzi</title>
+    <title>Nobody</title>
   </head>
   <body>
+
+    <audio controls autoplay loop style="display: none;" >
+      <source src="clock.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="playButton" style="display: none;">Play</button>
+
+    
     <div class="overlay"></div>
 
     <div class="block-1">
-      <img id="contract" src="https://cdn.discordapp.com/attachments/1152205282571714610/1152205732721201152/a6d745d26194aafd737c0d0f3dbdcddc.png" />
+      <img id="contract" src="vault.png" />
     </div>
     <div class="text">
       <p style="color: #9da49d">
-        ＯＰＥＮ ＴＨＥ. . .
+        YOU ARE NOBODY. . .
         <br />
         <br />
 
-        <span id="muerto" style="color: #fe0e0ea6">[ ＣＯＮＴＲＡＣＴ ]</span>
+        <span id="muerto" style="color: #dfd5d5e7">[ OPEN ME ]</span>
       </p>
       `
     </div>
+
+    <script>
+      var audio = document.getElementById("backgroundAudio");
+      var playButton = document.getElementById("playButton");
+    
+      // Trigger audio playback when the page loads
+      audio.play();
+    
+      // Hide the play button
+      playButton.style.display = "none";
+    </script>
+    
 
     <script>
       var x = [
@@ -141,8 +161,8 @@
       }
 
       function clickonbody() {
-        var text = "I've opened @BotPonzi Contract%0a%0a";
-        var hash = "＜＼＼" + generateMixed(10) + " ／／＞";
+        var text = "This is my proof of @WeAreNobodyCoin 🕵️%0a%0a";
+        var hash = "0x" + generateMixed(17) + "";
         window.location.href =
           "https://twitter.com/intent/tweet?&text=\n" + text + hash;
       }
@@ -161,11 +181,11 @@
 
     </script>
 
-    <div class="dead">
+    <!-- <div class="dead">
       <img src="deadend.gif" />
     </div>
     <div class="dead-2">
       <img src="deadend.gif" />
-    </div>
+    </div> -->
   </body>
 </html>
